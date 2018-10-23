@@ -16,16 +16,9 @@ def fizzbuzz(number)
 end
 
 def fizzbuzz_to_20
-    array = []
-    total = 1
-    loop do 
-      fizzbuzz(total)
-      array.push(fizzbuzz(total))
-      total += 1
-      break if total == 21
+    output = ""
+    20.times do |i|
+      output << fizzbuzz(i+1).to_s + "\n"  
     end
-   return array.join("\n")
+   return output[0..-2]
 end 
-
-fizzbuzz_to_20
-      
