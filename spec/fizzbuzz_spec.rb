@@ -15,5 +15,7 @@ describe 'fizzbuzz' do
     it 'returns "7" when passed 7' do
         expect(fizzbuzz(7)).to eq 7
     end 
-    it "returns \"#{expected_output}\" when fizzbuzz_to_20 is called"
+    it "returns \"#{expected_output}\" when fizzbuzz_to_20 is called" do
+       expect(fizzbuzz_to_20).to eq expected_output
+   end 
 end
